@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+      <div class="p-4 p-md-5">
+        <div class="icon d-flex align-items-center justify-content-center">
+          <span class="fa fa-user-o"></span>
+        </div>
+        <h3 class="text-center mb-4">Bienvenido</h3>
+        <form action="/login" method="POST" class="">
+            <div class="row gy-3">
+                <div class="col-12">
+                    <label for="username" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="username" placeholder="" name="username">
+                </div>
+                <div class="col-12">
+                    <label for="username" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="" name="password">
+                </div>
+                <div class="col-12">
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="submit">Ingresar</button>
+                    </div>
+                </div>
+                <div class="col-12">
+                  No tienes cuenta? <a href="/signup">Regístrate</a>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

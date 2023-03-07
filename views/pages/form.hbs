@@ -1,0 +1,89 @@
+<div class="row justify-content-center">
+    <div class="col-12">
+        <div class="alert alert-info" role="alert">
+            Bienvenido <strong>{{username}}</strong> 
+            <a href="/logout" class="alert-link float-end">Cerrar sesión</a>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6">
+        <h4>Agregar producto</h4>
+
+        <form class="mb-4" onsubmit="return addProduct(this)">
+            <div class="row g-3">
+                <div class="col-12">
+                    <label for="title" class="form-label">Título</label>
+                    <input type="text" name="title" id="title" class="form-control" placeholder="Nombre del producto">
+                </div>
+                <div class="col-12">
+                    <label for="price" class="form-label">Precio</label>
+                    <input type="text" name="price" id="price" class="form-control" placeholder="Ej. 3.50">
+                </div>
+                <div class="col-12">
+                    <label for="thumbnail" class="form-label">Thumbnail</label>
+                    <input type="text" name="thumbnail" id="thumbnail" class="form-control" placeholder="url">
+                </div>
+                <div class="col-12">
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Agregar producto</button>
+                </div>
+            </div>
+        </form>
+
+        <h4>Catálogo</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr class="table-dark">
+                    <th class="w-100">Nombre</th>
+                    <th class="text-end">Precio</th>
+                    <th class="text-center">Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="catalogo">
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-12 col-lg-6">
+        <h4>Agregar mensaje</h4>
+        <form class="mb-4" onsubmit="return addMessage(this)">
+            <div class="row g-3">
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="ejemplo@dominio.com" value="1@mail.com">
+                </div>
+                <div class="col-12">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="" value="nombre1">
+                </div>
+                <div class="col-12">
+                    <label for="lastname" class="form-label">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="" value="apellido1">
+                </div>
+                <div class="col-12">
+                    <label for="age" class="form-label">Edad</label>
+                    <input type="text" name="age" id="age" class="form-control" placeholder="" value="31">
+                </div>
+                <div class="col-12">
+                    <label for="alias" class="form-label">Alias</label>
+                    <input type="text" name="alias" id="alias" class="form-control" placeholder="" value="elUno">
+                </div>
+                <div class="col-12">
+                    <label for="avatar" class="form-label">Avatar</label>
+                    <input type="text" name="avatar" id="avatar" class="form-control" placeholder="" value="https://via.placeholder.com/20">
+                </div>
+                <div class="col-12">
+                    <label for="text" class="form-label">Mensaje</label>
+                    <input type="text" name="text" id="text" class="form-control" placeholder="">
+                </div>
+                <div class="col-12">
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Agregar mensaje</button>
+                </div>
+            </div>
+        </form>
+
+        <h4>Chat</h4>
+        <div id="chat" class="list-group">
+
+        </div>
+        
+    </div>
+</div>
